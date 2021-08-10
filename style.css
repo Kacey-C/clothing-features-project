@@ -1,0 +1,4 @@
+.materials-wrap {
+    display: flex;
+    justify-content: space-around;
+}
