@@ -13,12 +13,32 @@ section {
     display: none;
 }
 
+.feature-wrap span::before {
+    content: "\002B";
+}
+
+.feature-wrap {
+    border-bottom: 1px solid black;
+}
+
+#description {
+    display: none;
+}
+
 button {
     text-transform: uppercase;
     background-color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
     letter-spacing: .2rem;
     border: none;
-    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-size: 1.2rem;
 }
 
 .spacer {
@@ -35,7 +55,7 @@ button {
 }
 
 .material-perc {
-    font-size: 4em;
+    font-size: 2.5em;
     font-weight: 400;
     margin: 0px;
     text-align: center;
@@ -63,20 +83,34 @@ section {
     justify-content: center;
 }
 
+.feature-wrap {
+    border-bottom: none;
+}
+
+#description-mobile {
+    display: none;
+}
+
 #title > * {
     width: 33%;
 }
 
 button {
     border: 1px solid black;
+    width: 100%;
+}
+
+.button p {
+    display: none;
 }
 
 .feature-title {
     padding: 8px 0px;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 #description {
+    display: block;
     margin-top: 60px;
 }
 
