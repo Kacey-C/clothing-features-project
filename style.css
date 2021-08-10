@@ -11,10 +11,17 @@ section {
 
 .hide {
     display: none;
+    transition: all 0.5s ease-in-out;
 }
 
-.feature-wrap span::before {
-    content: "\002B";
+.symbol:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.selected ~ .symbol:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */ 
 }
 
 .feature-wrap {
@@ -27,7 +34,9 @@ section {
 
 button {
     text-transform: uppercase;
+    text-align: left;
     background-color: white;
+    width: 100%;
     font-weight: 700;
     font-size: 1.2rem;
     letter-spacing: .2rem;
@@ -87,7 +96,8 @@ section {
     border-bottom: none;
 }
 
-#description-mobile {
+.description-mobile,
+.symbol {
     display: none;
 }
 
@@ -97,7 +107,7 @@ section {
 
 button {
     border: 1px solid black;
-    width: 100%;
+    text-align: center;
 }
 
 .button p {
